@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio nro 1</title>
+</head>
+
+<body>
+	<section>
+
+		<h1>Ejercicio nro 1 - Curso React </h1>
+		<h2>Formulario</h2>
+		<form action="" id="contacto">
+			<label for="name">Nombre</label>
+			<input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre: Juan *"
+            pattern="[A-Za-z]{3,20}"
+            title="Escriba su nombre solamente con letras y el mismo debera contener entre 3 y 20 caracteres"
+            required>
+			<div>Escriba su nombre solamente con letras y el mismo debera contener entre 3 y 20 caracteres</div>
+			<label for="tel">Telefono</label>
+			<input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Telefono: 011-2345-6789"
+            title="Escriba su numero telefonico con guiones, sin espacios, el mismo debera tener entre 6 y 20 caracteres">
+			<div>Escriba su numero telefonico con guiones, sin espacios, el mismo debera tener entre 6 y 20 caracteres
+			</div>
+			<label for="email">Correo</label>
+			<input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Correo: juanperez@hotmail.com *"
+            required>
+			<div>Escriba una direccion de correo valida con nombre de usuario seguido de un @ y luego el dominio
+				(servidor)</div>
+
+	  	<label for="consulta">Consulta</label>
+			<textarea name="consulta" id="consulta" placeholder="Consulta: Escriba su Consulta *" required></textarea>
+			<button type="submit">Consultar</button>
+		</form>
+		<div>Los campos con * son obligatorios</div>
+	</section>
+<script> 
+alert ("completar formulario de contacto");
+</script>
+
+</body>
+
+</html>

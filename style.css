@@ -1,0 +1,77 @@
+* {
+  background-color: rgb(167, 142, 142);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  font-family: Lato;
+}
+
+h1,
+h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+#section,
+#contacto {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(70, 61, 61);
+  font-family: Lato;
+  color: black;
+}
+
+input{
+  color: black;
+}
+
+#contacto {
+  width: 80%;
+  min-width: 320px;
+  max-width: 960px;
+  margin: auto;
+  padding: 1rem;
+}
+#contacto input,
+#contacto textarea,
+#contacto button {
+  margin: 0.25rem;
+  padding: 0.5rem;
+}
+
+#contacto textarea {
+  height: 5rem;
+}
+#contacto button {
+  margin-top: -0.25rem;
+}
+
+#contacto div,
+#contacto label {
+  display: none;
+  text-align: left;
+  width: 60%;
+  margin: auto;
+  padding: 0.5rem;
+  text-shadow: 2px 2px 2px black;
+}
+
+#contacto input,
+#contacto textarea {
+  outline: none;
+  border: 0;
+}
+
+#contacto input:invalid:focus {
+  border-bottom: 0.25rem solid darkred;
+}
+
+#contacto input:invalid:focus + div {
+  display: block;
+}
